@@ -41,7 +41,7 @@ class TTSEngine:
         if not self.pipeline:
             raise RuntimeError("TTS engine not loaded. Call load() first.")
         
-        print(🔊 Speaking...")
+        print("🔊 Speaking...")
         
         # Generate and play audio chunks
         generator = self.pipeline(text, voice=self.config.kokoro_voice)
