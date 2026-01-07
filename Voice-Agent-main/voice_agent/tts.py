@@ -22,10 +22,10 @@ class TTSEngine:
     
     def load(self) -> None:
         """Load the Kokoro TTS pipeline."""
-        print("🔊 Loading Kokoro TTS...")
+        print("🔊 Loading  JOY TTS...")
         try:
             self.pipeline = KPipeline(lang_code=self.config.kokoro_lang)
-            print("✅ Kokoro TTS loaded!")
+            print("voice Agent is loaded")
         except Exception as e:
             raise RuntimeError(
                 f"Failed to load Kokoro TTS: {e}\n"
